@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap");
+
+* {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(22, 5, 38, 1) 88%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: #ccc;
+}
+
+.container {
+  max-width: 80vw;
+}
+
+.navbar {
+  display: flex;
+}
+.navbar li {
+  list-style: none;
+  margin: auto 12px;
+}
+
+.topleft {
+  width: 50%;
+}
+
+.topright {
+  width: 50%;
+}
+
+.section1 {
+  max-height: 100vh;
+  color: #711e15;
+}
+
+.section1 h1 {
+  color: #37110d;
+  font-size: 2rem;
+}
+
+.logo {
+  font-size: 3rem;
+}
+
+.dumbellimg {
+  margin-top: 30px;
+  width: 300px;
+  filter: drop-shadow(0 0 80px #ff0000);
+}
+
+.topright .gymimg {
+  margin: 20px auto;
+  width: 650px;
+  filter: drop-shadow(0 0 20px #c300ff);
+}
+
+.section2 {
+  padding: 73px;
+}
+
+.section2 h1 {
+  font-size: 2.3rem;
+}
+
+.section2 p {
+  padding: 0 8vw;
+  text-align: center;
+}
+
+.box {
+  padding: 8px 0;
+  margin: 12px 22px 20px 22px;
+  min-width: 20vw;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #ffffff19;
+}
+
+.box h2 {
+  font-size: 2rem;
+  padding: 15px 0;
+}
+
+.highlighted {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.box ul {
+  list-style-type: none;
+}
+
+.box ul li {
+  margin: 12px 2px;
+}
+
+.plantable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .section3 table {
+  width: 100%;
+  margin-bottom: 140px;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.section3 table th {
+  width: 23vw;
+  border-bottom: 2px solid black;
+  padding: 15px 0;
+}
+
+.section3 table td {
+  border-bottom: 2px solid black;
+}
+
+.section3 h1 {
+  font-size: 2.3rem;
+}
+
+.section3 {
+  padding: 73px;
+} */
+
+.footer-1 {
+  padding: 73px;
+  display: flex;
+}
+
+.footer-1 div {
+  text-align: center;
+}
+
+.col-2 {
+  flex-grow: 2;
+}
+
+.footer-1 div h3 {
+  margin: 30px 30px;
+  font-weight: 1000;
+}
+
+.col-1 a {
+  display: block;
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 1000;
+  margin-bottom: 20px;
+}
+
+form input {
+  width: 400px;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+  filter: drop-shadow(0 0 20px #ff00b7);
+}
+
+.social-icons {
+  margin-top: 30px;
+  filter: drop-shadow(0 0 15px #c300ff);
+}
+
+.social-icons i {
+  font-size: 22px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+footer {
+  padding: 23px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px;
+}
+
+.deal {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin: 12px 0;
+}
+
+.tick {
+  color: green;
+}
+
+.not-tick {
+  color: red;
+}
+
+.pic-shadow {
+  filter: drop-shadow(0 0 20px #ff00b7);
+}
+
+.silver-shadow {
+  filter: drop-shadow(0 0 20px #918f90);
+}
+
+.gold-shadow {
+  filter: drop-shadow(0 0 20px gold);
+}
+
+.plat-shadow {
+  filter: drop-shadow(0 0 20px teal);
+}
+
+/* .container {
+  padding: 2rem;
+} */
+
+.slider-wrapper {
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  z-index: 0 !important;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 12px);
+  }
+
+  100% {
+    transform: translate(0, 0px);
+  }
+}
