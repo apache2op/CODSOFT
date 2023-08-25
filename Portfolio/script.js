@@ -88,3 +88,23 @@ $(document).ready(function () {
     },
   });
 });
+
+// EmailJS //
+
+function SendMail() {
+  var params = {
+    sname: document.getElementById("sname").value,
+    smail: document.getElementById("smail").value,
+    sub: document.getElementById("sub").value,
+    message: document.getElementById("message").value,
+  };
+  emailjs
+    .send("service_jxv3a1a", "template_flia5wi", params)
+    // .then((res) => {
+    //   alert("Message Sent Successfully!");
+    // })
+    // .catch();
+    .then(function (res) {
+      alert("Message Sent Successfully!" + res.status);
+    });
+}

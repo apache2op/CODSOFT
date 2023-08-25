@@ -4,6 +4,12 @@
     <title>Portfolio Landing Page</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("uvswc3jBg8zb1gol7");
+        })();
+    </script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -131,7 +137,7 @@
           <div class="card">
             <div class="box">
               <i class="fas fa-code"></i>
-              <div class="text">Apps Design</div>
+              <div class="text">App Design</div>
               <p style="text-align: justify">
                 I encompasses both the user interface(UI) & user experience(UX).
                 The overall style of the app, including things like the colour
@@ -235,77 +241,57 @@
         <h2 class="title">MY PROJECTS</h2>
         <div class="carousel owl-carousel">
           <div class="card">
+            <a href="https://github.com/apache2op/school-library-management-system">
             <div class="box">
-              <img src="https://source.unsplash.com/720x600/?shopping" alt="" />
-              <div class="text">Ecommerce</div>
+              <img src="s.jpg" alt="" />
+              <div class="text">School LMS</div>
               <p>
-                #Project Details:- Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.
+                Library Management System using basic knowledge of C++ and MySQL
               </p>
             </div>
-          </div>
+          </div></a> 
           <div class="card">
+            <a href="https://github.com/apache2op/CODSOFT/tree/main/Portfolio">
             <div class="box">
-              <img
-                src="https://source.unsplash.com/720x600/?portfolio"
-                alt=""
-              />
+              <img src="p.jpg" alt="" />
               <div class="text">Portfolio</div>
-              <p>
-                #Project Details:- Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.
-              </p>
+              <p>Responsive Portfolio Website using HTML, CSS and JavaScript</p>
             </div>
-          </div>
+          </div></a>
           <div class="card">
+            <a href="https://github.com/apache2op/Lin-Reg-Py">
             <div class="box">
-              <img src="https://source.unsplash.com/720x600/?blog" alt="" />
-              <div class="text">Blog</div>
-              <p>
-                #Project Details:- Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.
-              </p>
+              <img src="m.png" alt="" />
+              <div class="text">Model</div>
+              <p>Linear Regression Model using Jupyter Notebook (python)</p>
             </div>
-          </div>
+          </div></a>
           <div class="card">
+            <a href="https://github.com/apache2op/lets-play-hangman">
             <div class="box">
-              <img
-                src="https://source.unsplash.com/720x600/?messanger"
-                alt=""
-              />
-              <div class="text">Messaging App</div>
-              <p>
-                #Project Details:- Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.
-              </p>
+              <img src="h.png" alt="" />
+              <div class="text">Hangman</div>
+              <p>Hangman Game using basics of Python programming language</p>
             </div>
-          </div>
+          </div></a>
           <div class="card">
+            <a href="https://github.com/apache2op/Flappy-Bird-Clone">
             <div class="box">
-              <img
-                src="https://source.unsplash.com/720x600/?app-clone"
-                alt=""
-              />
+              <img src="c.jpg" alt="" />
               <div class="text">Clone</div>
-              <p>
-                #Project Details:- Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.
-              </p>
+              <p>Flappy Bird Clone using Godot 3 game engine</p>
             </div>
-          </div>
+          </div></a>
           <div class="card">
+            <a href="https://github.com/apache2op/CODSOFT/tree/main/LandingPage">
             <div class="box">
-              <img
-                src="https://source.unsplash.com/720x600/?code,demo"
-                alt=""
-              />
-              <div class="text">Demo</div>
+              <img src="l.jpeg" alt="" />
+              <div class="text">Landing Page</div>
               <p>
-                #Project Details:- Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.
+                Basic Landing Page Website using HTML and CSS (not responsive)
               </p>
             </div>
-          </div>
+          </div></a>
         </div>
       </div>
     </section>
@@ -410,25 +396,26 @@
             <form action="#">
               <div class="fields">
                 <div class="field name">
-                  <input type="text" placeholder="Your Name" required />
+                  <input type="text" placeholder="Your Name*" id="sname" required />
                 </div>
                 <div class="field email">
-                  <input type="email" placeholder="Your Email" required />
+                  <input type="email" placeholder="Your Email*" id="smail" required />
                 </div>
               </div>
               <div class="field">
-                <input type="text" placeholder="Subject" required />
+                <input type="text" placeholder="Subject" id="sub" required />
               </div>
               <div class="field textarea">
                 <textarea
                   cols="30"
                   rows="10"
-                  placeholder="Message"
+                  placeholder="Message*"
+                  id="message"
                   required
                 ></textarea>
               </div>
               <div class="button-area">
-                <button type="submit">Send message</button>
+                <button onclick="SendMail()" type="submit">Send message</button>
               </div>
             </form>
           </div>

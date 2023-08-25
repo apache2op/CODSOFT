@@ -136,6 +136,10 @@ section .title::after {
   font-weight: 600;
 }
 
+.navbar .logo a span:hover {
+  filter: drop-shadow(0 0 2px #00ff41);
+}
+
 /*  Nav Logo Span Linear-Gradient  */
 .navbar .logo a span {
   background: whitesmoke;
@@ -182,7 +186,7 @@ section .title::after {
   position: fixed;
   height: 45px;
   width: 42px;
-  background: #1e3551;
+  background: #003b00;
   right: 30px;
   bottom: 10px;
   text-align: center;
@@ -302,7 +306,7 @@ section .title::after {
 
 .about .about-content .left img:hover {
   opacity: 1;
-  box-shadow: 20px 20px #003b00;
+  box-shadow: 25px 25px #003b00;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
@@ -364,6 +368,7 @@ section .title::after {
 .services .title::after,
 .projects .title::after {
   background: #000000;
+  
   content: "—What I Provide ?—";
 }
 
@@ -378,6 +383,8 @@ section .title::after {
 
 .services .serv-content .card:hover {
   background: #003b00;
+  filter: drop-shadow(10px 10px #00ff41);
+
 }
 
 .services .serv-content .card .box {
@@ -390,15 +397,11 @@ section .title::after {
 
 .services .serv-content .card i {
   font-size: 50px;
-  color: #222;
   background: #00ff41;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: color 0.3s ease;
-}
 
-.services .serv-content .card:hover i {
-  color: whitesmoke;
 }
 
 .services .serv-content .card .text {
@@ -407,7 +410,22 @@ section .title::after {
   margin: 10px 0 7px 0;
   color: #00ff41;
   font-weight: bold;
+  
 }
+
+.services .serv-content .card:hover .text {
+  color: whitesmoke !important;
+  filter: drop-shadow(3px 3px 3px #000);
+}
+
+.services .serv-content .card:hover i{
+  background-color: whitesmoke !important;
+  filter: drop-shadow(3px 3px 3px #000);
+}
+
+.services .serv-content .card:hover p{
+  filter: drop-shadow(3px 3px 3px #000);
+} 
 
 /*  Skills  */
 .skills {
@@ -517,6 +535,8 @@ section .title::after {
 
 .projects .carousel .card:hover {
   background: #003b00;
+  /* filter: drop-shadow(10px 10px #00ff41); */
+
 }
 
 .projects .carousel .card .box {
@@ -525,16 +545,27 @@ section .title::after {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+  color: whitesmoke;
 }
 
 .projects .carousel .card:hover .box {
   transform: scale(1.05);
 }
 
+.projects .carousel .card:hover .text {
+  color: whitesmoke !important;
+  filter: drop-shadow(3px 3px 3px #000);
+}
+
+.projects .carousel .card:hover p {
+  filter: drop-shadow(3px 3px 3px #000);
+}
+
 .projects .carousel .card .text {
   font-size: 25px;
-  font-weight: 500;
+  font-weight: bold;
   margin: 10px 0 7px 0;
+  color: #00ff41;
 }
 
 .projects .carousel .card img {
@@ -542,17 +573,18 @@ section .title::after {
   width: 150px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid #888c8d;
+  border: 5px solid #00ff41;
   transition: all 0.3s ease;
 }
 
 .projects .carousel .card:hover img {
-  border-color: #fff;
+  border-color: whitesmoke;
+  filter: drop-shadow(3px 3px 3px #000);
 }
 
 .owl-dots {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .owl-dot {
@@ -561,7 +593,7 @@ section .title::after {
   margin: 0 5px;
   outline: none !important;
   border-radius: 50%;
-  border: 2px solid #888c8d !important;
+  border: 2px solid #00ff41 !important;
   transition: all 0.3s ease;
 }
 
@@ -572,7 +604,7 @@ section .title::after {
 
 .owl-dot.active,
 .owl-dot:hover {
-  background: #18365a !important;
+  background: #003b00 !important;
 }
 
 /*  Contact  */
