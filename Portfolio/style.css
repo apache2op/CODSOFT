@@ -291,7 +291,6 @@ section .title::after {
 
 .about .about-content .left {
   width: 45%;
-  background: #008f11;
   height: 400px;
   width: 400px;
   object-fit: cover;
@@ -300,6 +299,7 @@ section .title::after {
 .about .about-content .left img {
   height: 400px;
   width: 400px;
+  filter:  sepia(100%) hue-rotate(65deg) saturate(350%);
   object-fit: cover;
   opacity: 0.5;
 }
