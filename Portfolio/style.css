@@ -306,6 +306,7 @@ section .title::after {
 
 .about .about-content .left img:hover {
   opacity: 1;
+  filter: none;
   box-shadow: 25px 25px #003b00;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
