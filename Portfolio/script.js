@@ -92,7 +92,7 @@ $(document).ready(function () {
 // EmailJS //
 
 function SendMail() {
-  var params = {
+  const params = {
     sname: document.getElementById("sname").value,
     smail: document.getElementById("smail").value,
     sub: document.getElementById("sub").value,
@@ -100,11 +100,12 @@ function SendMail() {
   };
   emailjs
     .send("service_jxv3a1a", "template_flia5wi", params)
-    // .then((res) => {
-    //   alert("Message Sent Successfully!");
-    // })
-    // .catch();
     .then(function (res) {
+      document.querySelector("#smail").value = "";
+      document.querySelector("#sname").value = "";
+      document.querySelector("#sub").value = "";
+      document.querySelector("#message").value = "";
       alert("Message Sent Successfully!" + res.status);
-    });
+    })
+    .catch((e) => console.log(e));
 }
