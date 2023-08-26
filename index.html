@@ -33,6 +33,14 @@
         transform: scale(1.5);
       }
 
+      a:hover {
+        opacity: 1;
+      }
+
+      a {
+        opacity: 0.6;
+      }
+
       .github:hover {
         filter: drop-shadow(0 0 10px #b300ff);
       }
@@ -42,41 +50,82 @@
       .mail:hover {
         filter: drop-shadow(0 0 10px #ffe600);
       }
+
+      .links {
+        font-size: 0.9rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      @media only screen and (min-width: 900px) {
+        .links {
+          font-size: 2rem;
+        }
+
+        h1 {
+          font-size: 4rem;
+        }
+      }
     </style>
   </head>
   <body
     align="center"
-    style="background-color: #000; margin: 160px; letter-spacing: 1px"
+    style="
+      background-color: #000;
+      margin: 2rem;
+      letter-spacing: 1px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    "
   >
-    <h1 style="font-size: 3vw; color: violet">
-      <font face="Garamond"
-        >CODESOFT WEB DEVELOPMENT <br />
-        INTERNSHIP PROJECTS
+    <div style="margin-bottom: 50px">
+      <h1 style="color: violet">
+        <font face="Garamond"
+          >CODESOFT WEB DEVELOPMENT <br />
+          INTERNSHIP PROJECTS
+        </font>
+      </h1>
+    </div>
+    <div style="margin-bottom: 100px">
+      <font face="Lucida Console" style="color: whitesmoke" class="links">
+        <p>Level 1 Task 1 : <a href="LandingPage/">Landing Page</a></p>
+        <p>
+          Level 1 Task 2 :
+          <a href="Portfolio/">Portfolio Site</a>
+        </p>
+        <p>Level 1 Task 3 : <a href="Calculator/">Calculator</a></p>
       </font>
-    </h1>
-    &nbsp;
-    <font face="Lucida Console" style="font-size: 2vw; color: whitesmoke">
-      <p>Level 1 Task 1 : <a href="LandingPage/">Landing Page</a></p>
-      <p>
-        Level 1 Task 2 :
-        <a href="Portfolio/">Portfolio Site</a>
-      </p>
-      <p>Level 1 Task 3 : <a href="Calculator/">Calculator</a></p>
-    </font>
-    &nbsp;
-    <div style="font-size: 2vw">
-      <a href="https://github.com/apache2op"
-        ><i class="fa-brands fa-github github" style="color: whitesmoke"></i></a
-      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="https://www.linkedin.com/in/ayush-das-860866201/"
-        ><i
-          class="fa-brands fa-linkedin linkedin"
-          style="color: whitesmoke"
-        ></i></a
-      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="mailto:dasayush503@gmail.com"
-        ><i class="fa-solid fa-envelope mail" style="color: whitesmoke"></i
-      ></a>
+    </div>
+    <div
+      style="
+        font-size: 2rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        width: 300px;
+      "
+    >
+      <div>
+        <a href="https://github.com/apache2op"
+          ><i class="fa-brands fa-github github" style="color: whitesmoke"></i
+        ></a>
+      </div>
+      <div>
+        <a href="https://www.linkedin.com/in/ayush-das-860866201/"
+          ><i
+            class="fa-brands fa-linkedin linkedin"
+            style="color: whitesmoke"
+          ></i
+        ></a>
+      </div>
+      <div>
+        <a href="mailto:dasayush503@gmail.com"
+          ><i class="fa-solid fa-envelope mail" style="color: whitesmoke"></i
+        ></a>
+      </div>
     </div>
   </body>
 </html>
